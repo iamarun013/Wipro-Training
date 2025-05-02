@@ -1,2 +1,1 @@
-# Apr-28-repo
-April 28th repo for Wipro
+All Assignments, code practicing and notes during my Wipro Training.
