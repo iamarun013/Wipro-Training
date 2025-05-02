@@ -3,20 +3,19 @@ using System;
 
 public class HelloWorld
 {
-    static int rem;
-static int sum=0;
+ 
 static int Sum_of_digits(int n){
-    if(n>0)
-    {
-        rem=n%10;
-        sum+=rem;
-       return Sum_of_digits(n/10);
-    }
-    else{
-    return sum;} 
+if(n==0)
+{return 0;
 }
+return (n%10)+Sum_of_digits(n/10);
+
+} 
+  
     public static void Main(string[] args)
     {
         Console.WriteLine ($"Sum is {Sum_of_digits(22)}");
     }
 }
+
+
