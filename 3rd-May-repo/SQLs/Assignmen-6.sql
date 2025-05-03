@@ -22,10 +22,10 @@ VALUES
 
 INSERT INTO orders
 VALUES
-(101, 1, 10, 2023-28-04),
-(102, 2, 30, 2023-28-12),
-(103, 3, 20, 2023-28-16),
-(104, 4, 15, 2023-28-25);
+(101, 1, 10, 2024-04-28),
+(102, 2, 30, 2024-04-28),
+(103, 3, 20, 2024-04-20),
+(104, 4, 15, 2025-01-18);
 
 SELECT 
 orders.order_id,
@@ -48,3 +48,11 @@ orders.order_date
 
 FROM products
 LEFT JOIN orders on products.product_id=orders.order_id;
+
+SELECT
+products.product_name
+SUM(orders.order_quantity) AS TotalUnitsSold
+
+FROM orders
+INNER JOIN products on orders.product_id = products.product_id
+GROUP BY products.product_name
