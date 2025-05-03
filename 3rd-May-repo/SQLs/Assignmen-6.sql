@@ -47,7 +47,7 @@ orders.order_quantity,
 orders.order_date
 
 FROM products
-LEFT JOIN orders on products.product_id=orders.order_id;
+LEFT JOIN orders on products.product_id=orders.product_id;
 
 SELECT
 products.product_name
