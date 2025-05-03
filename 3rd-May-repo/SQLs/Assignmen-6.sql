@@ -50,7 +50,7 @@ FROM products
 LEFT JOIN orders on products.product_id=orders.product_id;
 
 SELECT
-products.product_name
+products.product_name,
 SUM(orders.order_quantity) AS TotalUnitsSold
 
 FROM orders
