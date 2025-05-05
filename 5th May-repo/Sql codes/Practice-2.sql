@@ -13,3 +13,4 @@ INNER JOIN Products p ON o.product_id=p.product_id
 WHERE o.product_id = @Prodcut_ID;
 END;
 
+EXEC GetOrdersByProduct @Prodcut_ID=1;
