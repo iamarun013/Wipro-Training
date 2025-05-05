@@ -47,3 +47,21 @@ SELECT AVG(Marks) AS AverageMarks FROM Students;
 SELECT Department, MAX(Salary) AS HighesSalary
 FROM Employees 
 GROUP BY Department;
+
+SELECT First_Name, Marks,
+CASE	
+	WHEN Marks >=90 THEN 'A'
+	WHEN Marks >=75 THEN 'B'
+	WHEN Marks >=60 THEN 'C'
+
+	ELSE 'D'
+END AS Grade
+FROM Students;
+
+SELECT Emp_Name, Salary,
+CASE 
+WHEN Salary >=70000 THEN 'High'
+WHEN Salary >=50000 THEN 'Medium'
+ELSE 'LOW'
+END AS SalaryBand
+FROM Employees;
