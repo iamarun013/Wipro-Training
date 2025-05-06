@@ -38,6 +38,11 @@ SELECT
 Name,
 Department,
 Salary,
-Row_Number() OVER(Partition by Department Order by Salaey DESX) AS Row_Number
+Row_Number() OVER(Partition by Department Order by Salaey DESC) AS Row_Number
 
 FROM Employees;
+
+----------------------------------
+CREATE USER test_user FOR LOGIN test_login;
+--first ensure the login exists if not:
+CREATE LOGIN test_login WITH PASSWORD = 'StrongPls@123';
