@@ -16,6 +16,9 @@ class Program
             dic[word]++;
         }
 
-
+    foreach(var pair in dic)
+    {
+        Console.WriteLine($"{pair.Key} occurs for {pair.Value} times");
+    }
     }
 }
