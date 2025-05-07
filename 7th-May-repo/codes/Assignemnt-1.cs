@@ -4,7 +4,7 @@ class Program
 {
     static int Countfreq(int[] arr,int[] freq)
     {
-   ;
+   
         int c;
         c= 0;
         for (int i = 0; i < arr.Length; i++)
