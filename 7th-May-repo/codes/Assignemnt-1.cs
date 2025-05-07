@@ -9,19 +9,19 @@ class Program
         c= 0;
         for (int i = 0; i < arr.Length; i++)
         {
-            c = 0;
+            if(freq[i] !=-1)
+            {
+            int c=1;
             for (int j = i + 1; j < arr.Length; j++)
             {
                 if (arr[i] == arr[j])
                 {
                     c++;
-                    freq[j] = 0;
+                    freq[j] = -1;
                 }
             }
-            if (freq[i]!=0)
-            {
-                freq[i] = c;
-            }
+            freq[i]=c;
+        }
         }
         for (int i = 0; i < arr.Length; i++)
         {
@@ -43,4 +43,5 @@ class Program
 
         
     }
+
 }
