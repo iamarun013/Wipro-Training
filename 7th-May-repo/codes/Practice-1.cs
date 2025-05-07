@@ -31,6 +31,14 @@ class Program
         {
             Console.WriteLine(item);
         }
+        //Conatins an element or not
+
+        if (List.Contains("APPLE"))
+        {
+            Console.WriteLine("The list contains grapes");
+        }
+        else
+            Console.WriteLine("The list doesnot contain grapes");
         Console.Read();
 
 
