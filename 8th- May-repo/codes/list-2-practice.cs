@@ -1,27 +1,30 @@
 using System;
 using System.Collections.Generic;
 
-class Program
+class Student
 {
-    static void Main()
+    public int ID { get; set; }
+    public string name { get; set; }
+
+}
+class Prograam
+{
+    public static void Main()
     {
-        List<string> fruits = new List<string>() { "Apple", "Banana", "Cherry" };
-
-        fruits.Add("Mango");
-        fruits.Insert(1, " Orange");
-        fruits.Remove("Banana");
-        fruits.RemoveAt(2);
-        if (fruits.Contains("Apple")) ;
+        List<Student> students = new List<Student>
         {
-            Console.WriteLine("Apple is in the List");
+            new Student { ID = 1, name = "Alice" },
+
+            new Student { ID = 2, name = "Bob" },
+
+            new Student { ID = 3, name = "abir" }
+        };
+
+        students.Add(new Student { ID = 4, name = "charlie" });
+        foreach (var student in students)
+        {
+            Console.WriteLine($"ID:{student.ID}, Name:{student.name}");
         }
 
-        fruits.Sort();
-
-        Console.WriteLine("Fruits Lists:");
-        foreach (string fruit in fruits)
-        {
-            Console.WriteLine("Fruits ");
-        }
     }
 }
