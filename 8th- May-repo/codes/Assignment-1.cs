@@ -12,12 +12,12 @@ class Program
     {
         List<Employee> employee_names = new List<Employee>();
         {
-        new employee_names{ID=1, names="Arun" },
-        new employee_names{ID=2, names="Arnab"},
-        new employee_names{ID=3, names="Abir"},
-        new employee_names{ID=4, names="Meghoma"},
-        new employee_names{ID=5, names="Bhairav"},
-        new employee_names{ID=6, names="Poltu"}
+        new Employee{ID=1, names="Arun" },
+        new Employee{ID=2, names="Arnab"},
+        new Employee{ID=3, names="Abir"},
+        new Employee{ID=4, names="Meghoma"},
+        new Employee{ID=5, names="Bhairav"},
+        new Employee{ID=6, names="Poltu"}
         
         };
         employee_names.Add(new Employee(ID=7, names="God"))
