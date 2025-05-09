@@ -32,5 +32,13 @@ class Program
         Console.WriteLine(calculator.Add(4.5, 7.2));
         Console.WriteLine(calculator.Add(1, 2, 9));
 
+        Console.WriteLine(calculator.Substract(1, 2));
+        Console.WriteLine(calculator.Substract(4.5, 7.2));
+        Console.WriteLine(calculator.Substract(1, 2, 9));
+
+        Console.WriteLine(calculator.Mul(1, 2));
+        Console.WriteLine(calculator.Mul(4.5, 7.2));
+        Console.WriteLine(calculator.Mul(1, 2, 9));
+
     }
 }
