@@ -26,6 +26,11 @@ class Program
 
         student1.PrintDetails();
         student2.PrintDetails();
+       
+        Calculator calculator = new Calculator();
+        Console.WriteLine(calculator.Add(1, 2));
+        Console.WriteLine(calculator.Add(4.5, 7.2));
+        Console.WriteLine(calculator.Add(1, 2, 9));
 
     }
 }
