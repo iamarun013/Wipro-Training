@@ -26,7 +26,7 @@ class Function
     }
 }
 //     
-//         // Use the delegate type from SimpleDelegate
+//         // Use the delegate type from SimpleDelegate Samjhe ?
 //         SimpleDelegate.SomeOperation add = Sum;
 //         int result = add(10, 10);
 //         Console.WriteLine(result);
