@@ -15,13 +15,15 @@ class TestClass
     static void Main()
     {
         //Declare instances of the custom delegates
-        CustomDel hiDel, byeDel, multiDel;
+        CustomDel hiDel, byeDel, multiDel, multiminusDel;
 
         hiDel = Hello;
 
         byeDel = GoodBye;
 
         multiDel = hiDel + byeDel;
+        multiminusDel = multiDel - hiDel;
+
 
         Console.WriteLine("Invoking delegate hiDel: ");
         hiDel("A");
@@ -29,6 +31,7 @@ class TestClass
         byeDel("B");
         Console.WriteLine("Invoking delegate multiDel");
         multiDel("C");
-
+        Console.WriteLine("Invoking delegate multiDel");
+        multiminusDel("D");
     }
 }
