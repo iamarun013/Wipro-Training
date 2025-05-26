@@ -1,50 +1,36 @@
 using System;
-using System.Data;
-using System.Data.SqlClient;
+using System.Threading.Tasks;
 
 class Program
 {
-    static void Main()
+    static async Task Main()
     {
-        string connectionString =
-            "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Northwind;"
-            + "Integrated Security=true";
+        // Create three tasks with different delays
+        Task task1 = DelayTaskAsync("Task1", 3000);
+        Task task2 = DelayTaskAsync("Task2", 1000);
+        Task task3 = DelayTaskAsync("Task3", 2000);
 
-        // Provide the query string with a parameter placeholder.
-        string queryString =
-            "SELECT ProductID, UnitPrice, ProductName from dbo.products "
-                + "WHERE UnitPrice > @pricePoint "
-                + "ORDER BY UnitPrice DESC;";
+        // Wait for any of the tasks to complete
+        Task firstCompleted = await Task.WhenAny(task1, task2, task3);
 
-        // Specify the parameter value.
-        int paramValue = 5;
-
-        // Create and open the connection in a using block. This
-        // ensures that all resources will be closed and d
-        // isposed
-        // when the code exits.
-        using (SqlConnection connection = new SqlConnection(connectionString))
+        // Determine which task finished first
+        if (firstCompleted == task1)
         {
-            // Create the Command and Parameter objects.
-            SqlCommand command = new SqlCommand(queryString, connection);
-            command.Parameters.AddWithValue("@pricePoint", paramValue);
-
-            try
-            {
-                connection.Open();
-                SqlDataReader reader = command.ExecuteReader();
-                while (reader.Read())
-                {
-                    Console.WriteLine("\t{0}\t{1}\t{2}",
-                        reader[0], reader[1], reader[2]);
-                }
-                reader.Close();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            Console.ReadLine();
+            Console.WriteLine("First completed: Task1");
         }
+        else if (firstCompleted == task2)
+        {
+            Console.WriteLine("First completed: Task2");
+        }
+        else if (firstCompleted == task3)
+        {
+            Console.WriteLine("First completed: Task3");
+        }
+    }
+
+    static async Task DelayTaskAsync(string name, int delayMilliseconds)
+    {
+        await Task.Delay(delayMilliseconds);
+        Console.WriteLine($"{name} finished after {delayMilliseconds} ms");
     }
 }
