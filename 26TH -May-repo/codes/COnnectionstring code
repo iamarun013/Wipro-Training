@@ -20,7 +20,8 @@ class Program
         int paramValue = 5;
 
         // Create and open the connection in a using block. This
-        // ensures that all resources will be closed and disposed
+        // ensures that all resources will be closed and d
+        // isposed
         // when the code exits.
         using (SqlConnection connection = new SqlConnection(connectionString))
         {
