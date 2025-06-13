@@ -1,0 +1,64 @@
+﻿@model InventoryManagement.Models.Item
+
+@{
+    ViewData["Title"] = "Edit Item";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg rounded">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Edit Inventory Item</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="mb-3">
+                            <label asp-for="Name" class="form-label fw-bold"></label>
+                            <input asp-for="Name" class="form-control" placeholder="Enter item name" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="quantity" class="form-label fw-bold"></label>
+                            <input asp-for="quantity" class="form-control" placeholder="Enter quantity" />
+                            <span asp-validation-for="quantity" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="price" class="form-label fw-bold"></label>
+                            <input asp-for="price" class="form-control" placeholder="Enter price (e.g. 99.99)" />
+                            <span asp-validation-for="price" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Category" class="form-label fw-bold"></label>
+                            <input asp-for="Category" class="form-control" placeholder="Enter category (e.g. Electronics)" />
+                            <span asp-validation-for="Category" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-4">
+                            <label asp-for="Supplier" class="form-label fw-bold"></label>
+                            <input asp-for="Supplier" class="form-control" placeholder="Enter supplier name" />
+                            <span asp-validation-for="Supplier" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <a asp-action="Index" class="btn btn-secondary">← Back to List</a>
+                            <button type="submit" class="btn btn-success">💾 Save Changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
