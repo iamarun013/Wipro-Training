@@ -1,0 +1,26 @@
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\bin\Debug\net6.0-windows\Inventory Management System.exe
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\bin\Debug\net6.0-windows\Inventory Management System.deps.json
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\bin\Debug\net6.0-windows\Inventory Management System.runtimeconfig.json
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\bin\Debug\net6.0-windows\Inventory Management System.dll
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\bin\Debug\net6.0-windows\Inventory Management System.pdb
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\obj\Debug\net6.0-windows\Inventory Management System.csproj.AssemblyReference.cache
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\obj\Debug\net6.0-windows\Inventory_Management_System.Form1.resources
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\obj\Debug\net6.0-windows\Inventory_Management_System.Properties.Resources.resources
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\obj\Debug\net6.0-windows\Inventory Management System.csproj.GenerateResource.cache
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\obj\Debug\net6.0-windows\Inventory Management System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\obj\Debug\net6.0-windows\Inventory Management System.AssemblyInfoInputs.cache
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\obj\Debug\net6.0-windows\Inventory Management System.AssemblyInfo.cs
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\obj\Debug\net6.0-windows\Inventory Management System.csproj.CoreCompileInputs.cache
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\obj\Debug\net6.0-windows\Inventory Management System.dll
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\obj\Debug\net6.0-windows\refint\Inventory Management System.dll
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\obj\Debug\net6.0-windows\Inventory Management System.pdb
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\obj\Debug\net6.0-windows\Inventory Management System.genruntimeconfig.cache
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\obj\Debug\net6.0-windows\ref\Inventory Management System.dll
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\obj\Debug\net6.0-windows\Inventory_Management_System.ManageUser.resources
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\KIIT\Documents\Codes\C#\Inventory Management System\Inventory Management System\obj\Debug\net6.0-windows\Inventor.6904B46F.Up2Date
